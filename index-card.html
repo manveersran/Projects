@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      font-family: poppins,sans-serif;
+      background: rgb(243,211,76) ;
+    }
+    .card{
+      box-shadow: 20px 20px 0px #000;
+      margin-left: 35%;
+      margin-top: 12%;
+      border-radius: 20px;
+      width:340px;
+      padding: 20px;
+      text-align: left;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      border: 1px solid #000;
+      background: #fff;
+      
+    }
+    .img img{
+      border-radius: 10px;
+    }
+    .learn{
+      border-radius: 5px;
+      background:  rgb(243,211,76);
+      width: 30%;
+      padding: 1px;
+      margin-top: 20px;
+      text-align: center;
+      height: 35px;}
+      
+      .learn h3{
+      font-size: large;
+      margin-top: 9px;
+      color: #212020;
+
+      }
+      
+    .publish h4{
+      color: #343434;
+      font-weight: bold;
+      margin-top: 15px;
+  
+    }
+    .htmlandcss{
+      color: rgb(243,211,76) ;
+    }
+    .htmlandcss h2{
+      font-weight: 10px;
+
+    }
+    .paragraph{
+      font-weight: bold;
+      color: #7e7e7e;
+    }
+    .id{
+      display: flex;
+    }
+    .id img{
+      height: 40%;
+      width: 10%;
+    }
+    .id p{
+      color: #2d2c2c;
+      margin-top: 10px;
+      margin-left: 10px;
+      font-weight: bolder;
+    }
+  </style>
+  
+</head>
+<body>
+
+
+    <div class="card" >
+      <div class="img"><img src="assets/images/illustration-article.svg" alt=""></div>
+      <div class="learn"><h3>Learning</h3></div>
+      <div class="publish"><h4>Published 21 Dec 2023</h4></div>
+      <div class="htmlandcss"><h2>HTML & CSS foundations</h2></div>
+      <h4 class="paragraph">These languages are the backbone of every website, defining structure, content, and presentation.</h4>
+      <div class="id">
+        <img class="avatar" src="assets/images/image-avatar.webp">
+        <p>Greg Hooper</p>
+      </div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>
