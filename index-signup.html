@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      font-family: poppins;
+      background:hsl(0, 100%, 74%) url(images/bg-intro-desktop.png) ; 
+    }
+    .left{
+      width: 45%;
+      margin-left: 100px;
+      top: 30%;
+      position: absolute;
+      font-weight: bolder;
+      color: #fff;
+    }
+    .left h1{
+      font-size: 50px;
+    }
+    .left p{
+      word-spacing: 1px;
+      color: #efefefb6;
+    }
+    .trial{
+      box-shadow: 0px 10px 0px #6e6e6e3f;
+      word-spacing: 2px;
+      text-align: center;
+      justify-content: center;
+      height: 60px;
+      width: 400px;
+      top: 10%;
+      margin-left: 50%;
+      border-radius: 10px;
+      color: #fff;
+      position: absolute;
+      background: hsl(248, 32%, 49%);
+    }
+    .box{
+      box-shadow: 0px 10px 0px #6e6e6e3f;
+      place-items: center;
+      align-items: center;
+      padding: 20px;
+      border-radius: 10px;
+      height: 400px;
+      width: 360px;
+      margin-left: 50%;
+      top: 22%;
+      position: absolute;
+      background: #fff;
+    }
+    .box input{
+      font-size: large;
+      margin-top: 20px;
+      border: 1px solid #adadad77;
+      border-radius: 5px ;
+      height: 40px;
+      width: 95%;
+
+    }
+    .box span{
+      color: rgba(0, 0, 0, 0.441);
+      pointer-events: none;
+      margin-top: 30px;
+      left: 10%;
+      transition: 0.2s;
+      position: absolute;
+    }
+
+    .box input:valid ~ span,
+    .box input:focus ~ span{
+      transition: 0.2s;
+      color: #00000000;
+      transform: translateX(10px),translateY(10px);
+
+
+    }
+    
+    .box button{
+      height: 40px;
+      margin-top: 20px;
+      font-weight: bolder;
+      box-shadow: 0px 3px 0  hsla(154, 94%, 50%, 0.341);
+      letter-spacing: 1px;
+      word-spacing: 1px;
+      width: 97%;
+      color: #fff;
+      background:  hsl(154, 59%, 51%);
+      border-radius: 5px;
+      border: none;
+      transition: 0.1s;
+
+    }
+    .box button:hover{
+      transition: 0.1s;
+      background:  hsl(154, 62%, 42%);
+    }
+    .terms{
+      font-weight: 600;
+      font-size: x-small;
+      color: #909090;
+    }
+    .terms a{
+      color: hsl(0, 100%, 74%);
+    }
+    </style>
+</head>
+<body>
+  <div class="left">
+    <h1>Learn to code by watching others</h1>
+    <p>see how experienced developers solve problems in real-time. <br>
+       Watching scripted tutorials is great, but understading how<br>
+       developers think is invaluable. 
+    </p>
+  </div>
+<!-- ----- -->
+  <div class="right">
+    <div class="trial"><p><b>Try it free 7days</b> then $20/mo. thereafter</p></div>
+    <div class="box">
+    <div class="container1">
+      <input type="text" required="required"><span>First name</span>
+
+      <div class="container2">
+        <input type="text" required="required"><span>Last name</span>
+
+        <div class="container3">
+          <input type="text" required="required"><span>Email Address</span> 
+               <div class="container4">
+            <input type="password" required="required" ><span>Password</span>
+
+
+            <button type="submit">CLAIM YOUR FREE TRIAL</button>
+            <p class="terms">By clicking the button, you are agreeing to our <a>Terms and Services </a></p>
+    </div>
+    </div>
+  </div>
+  </div>
+
+ 
+</body>
+</html>
