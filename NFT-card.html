@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="(https://fonts.google.com/specimen/Outfit)">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      margin-top: 10%;
+
+      font-family: "Outfit", sans-serif;
+      background: hsl(217, 54%, 11%);
+      place-items: center;
+      align-items: center;
+      justify-content: center;
+      display: grid;
+    }
+
+    div{
+      color: #fff;
+      background: hsl(216, 50%, 16%);
+      padding: 20px;
+      width: 250px;
+      border-radius: 15px;
+      transition: 0.5s;
+
+    }
+    div:hover{
+      transition: 0.5s;
+
+      box-shadow: #0c0625 2px 1px 60px 10px ;
+
+    }
+    div p{
+      
+      color: #ffffff8c;
+    }
+    div img{
+      z-index: 2;
+      width: 250px;
+      border-radius: 5px;
+    }
+    div img:hover{
+      background: #fff;
+      opacity: ;
+      
+    }
+
+    span {
+      display: flex;
+    }
+    span h3{
+      font-size: 16px;
+      color: hsl(187, 80%, 67%);
+      margin-left: 4px;
+      margin-top: -1px;
+    }
+    .clock{
+      margin-left: 65px;
+    }
+    span h4{
+      color: #ffffff8c;
+      font-size: 14px;
+      font-weight: 100;
+      margin-left: 5px;
+      margin-top: 0px;
+    }
+    hr{
+      border: 1px solid #234374;
+    }
+    header img{
+      border-radius: 1rem;
+      border: 1px solid #fff;
+      width: 30px;
+      height: 30px;
+    }
+    header{
+      display: flex;
+    }
+    header h4{
+      font-weight: 100;
+      margin-left: 10px;
+      margin-top: 5px;
+    }
+    header h4::before{
+      color: #ffffff60;
+      content: "creation of ";
+    }
+    .eye{
+      opacity: 0;
+      z-index: 0;
+      position: absolute;
+      margin-top: 8%;
+      margin-left: -11%;
+      width: 50px;
+      
+    }
+  </style>
+</head>
+<body>
+      
+  <div class="div1">
+    <img class="diam"  src="images/image-equilibrium.jpg">
+
+    <h3>Equilibruin #3429</h3>
+    <p>Our Equilibruin collection promotes balances and calm.</p>
+    <span>
+    <svg class="svg1" width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+<h3>0.041 ETH</h3>
+<svg class="clock" width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+<h4>3 Days Left</h4>
+</span>
+<hr>
+<header>
+  <img src="/images/image-avatar.png?version%3D1688053391289">
+  <h4>Jules Wyvern</h4>
+  
+</header>
+
+
+
+
+  </div>
+          
+  </div>
+</body>
+</html>
