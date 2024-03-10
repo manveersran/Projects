@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      font-family: "Outfit", sans-serif;
+      place-items: center;
+      overflow: hidden;
+      display: grid;
+      background: hsl(185, 75%, 39%);
+    }
+    header{
+      z-index: 0;
+      place-items: center;
+      display: flex;
+    }
+    header .top{
+      position: absolute;
+margin-left: -80%;
+      
+    }
+    header .bottom{
+      
+      position: absolute;
+      margin-bottom: -110%;
+      margin-left: 4%;
+    }
+    div{
+      margin-top: 10%;
+      overflow: hidden;
+      display: grid;
+      text-align: center;
+      background: #fff;
+      z-index: 3;
+      place-items: center;
+      border-radius: 1REM;
+    
+    }
+     
+    div .logo{
+      border: 8px solid #fff;
+      border-radius: 10rem;
+      width: 100px;
+      margin-top: -15%
+    }
+    hr{
+      width: 100%;
+      border-top: 1px solid #0000003a;
+    }
+    span{
+      padding-bottom: 20px;
+      margin-left: 50px;
+      place-items: center;
+      display: flex ;
+    }
+    span h3{
+      color: #000000d2;
+    }
+    span p{
+      letter-spacing: 1px;
+      color: #000000c7;
+      font-size: small;
+      margin-top: 45px;
+      transform: translateX(-40px);
+    }
+    .london{
+      color: #00000079;
+      padding-bottom: 10px;
+      margin-top: -10px;
+      font-weight: 100;
+    }
+    div h3{
+      color: #000000d2;
+
+    }
+   </style>
+</head>
+<body>
+  <header>
+  <svg class="top" width="978" height="978" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="a"><stop stop-color="#0989B4" stop-opacity="0" offset="0%"/><stop stop-color="#53FFEE" offset="99.94%"/></linearGradient></defs><ellipse fill="url(#a)" transform="rotate(-135 489 489)" cx="489" cy="489" rx="489" ry="488" fill-rule="evenodd" opacity=".5"/></svg>
+ <svg class="bottom" width="978" height="978" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="a"><stop stop-color="#0989B4" stop-opacity="0" offset="0%"/><stop stop-color="#53FFEE" offset="99.94%"/></linearGradient></defs><ellipse fill="url(#a)" transform="scale(1 -1) rotate(45 1669.55 0)" cx="489" cy="489" rx="489" ry="488" fill-rule="evenodd" opacity=".25"/></svg>
+</header>
+<div>
+
+<img src="\svgviewer-png-output.png">
+
+
+ 
+<img class="logo" src="/profile-card-component-main/images/image-victor.jpg">
+  <h3 >Victor Crest </h3>
+  <p class="london">London</p>
+  <hr>
+  <span>
+    <h3> 80k</h3>
+    <p> Followers</p>
+    <h3> 803k</h3>
+    <p> Likes</p>
+    <h3> 1.4k</h3>
+    <p> Photos</p>
+    
+
+  </span>
+
+</div>
+</body>
+</html>
