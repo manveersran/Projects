@@ -4,102 +4,215 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Blog preview card</title>
+  <title>Frontend Mentor | Expenses chart component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    body{
+    *{
       font-family: poppins,sans-serif;
-      background: rgb(243,211,76) ;
     }
-    .card{
-      box-shadow: 20px 20px 0px #000;
-      margin-left: 35%;
-      margin-top: 12%;
-      border-radius: 20px;
-      width:340px;
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background: rgba(247,233,220,255);
+    }
+
+    .upper-card{
+      top: 25%;
+      left: 33%;
+      height: 75px;
+      width: 450px;
       padding: 20px;
-      text-align: left;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      border: 1px solid #000;
-      background: #fff;
-      
-    }
-    .img img{
-      border-radius: 10px;
-    }
-    .learn{
-      border-radius: 5px;
-      background:  rgb(243,211,76);
-      width: 30%;
-      padding: 1px;
-      margin-top: 20px;
-      text-align: center;
-      height: 35px;}
-      
-      .learn h3{
-      font-size: large;
-      margin-top: 9px;
-      color: #212020;
-
-      }
-      
-    .publish h4{
-      color: #343434;
-      font-weight: bold;
-      margin-top: 15px;
-  
-    }
-    .htmlandcss{
-      color: rgb(243,211,76) ;
-    }
-    .htmlandcss h2{
-      font-weight: 10px;
-
-    }
-    .paragraph{
-      font-weight: bold;
-      color: #7e7e7e;
-    }
-    .id{
+      position: absolute;
       display: flex;
+      border-radius: 15px;
+      background: rgba(236,117,93,255);
     }
-    .id img{
-      height: 40%;
-      width: 10%;
+    .upper-card .balance{
+      margin-bottom: 100px;
+      color: #fff;
     }
-    .id p{
-      color: #2d2c2c;
-      margin-top: 10px;
-      margin-left: 10px;
+    .balance p{
+      margin-top: 1px;
       font-weight: bolder;
     }
-  </style>
+    .balance h2{
+      margin-top: 0px;
+
+    }
+    .circles{
+      margin-top: 15px;
+      margin-left: 250px;
+    }
+    .lower-card{
+      
+      position: absolute;
+      background: #fff;
+padding: 20px;
+width: 450px;
+border-radius: 15px;
+top: 45%;
+left: 33%;
+    }
+    .lower-card h1{
+      font-size: x-large;
+      margin-left: 20px;
+    }
+    .days{
+      justify-content: space-between;
+      padding: 20px;
+      display: flex;
+    }
+    .bar1{
+      cursor: pointer;
+      margin-top: 100px;
+      border-radius: 5px;
+  transition: 0.3s;
+      width: 40px;
+      height: 40px;
+      background: rgba(236,117,93,255);
+    }  
+      .bar2{
+      margin-top: 70px;
+      cursor: pointer;
+  transition: 0.3s;
+      border-radius: 5px;
+      width: 40px;
+      height: 70px;
+      background: rgba(236,117,93,255);
+    }   
+     .bar3{
+      cursor: pointer;
+
+      margin-top: 20px;
+  transition: 0.3s;
+      border-radius: 5px;
+      width: 40px;
+      background: rgba(236,117,93,255);
+      height: 120px;
+    }
+    .bar4{
+      margin-top: 80px;
+      cursor: pointer;
+  transition: 0.3s;
+      border-radius: 5px;
+      width: 40px;      
+      background: rgba(236,117,93,255);
+      height: 60px;
+    }
+    .bar5{
+      margin-top: 90px;
+      height: 50px;
+  transition: 0.3s;
+      cursor: pointer;
+      background: rgba(236,117,93,255);
+      border-radius: 5px;
+      width: 40px;
+    }
+    .bar6{
+      border-radius: 5px;
+      margin-top: 50px;
+      cursor: pointer;
+      width: 40px;      background: rgba(236,117,93,255);
+      transition: 0.3s;
+
+      height: 90px;
+    }
+    .bar7{
+      
+      cursor: pointer;
+      border-radius: 5px;
+      width: 40px;      background: rgba(236,117,93,255);
+margin-top: 90px;
+  transition: 0.3s;
+      height: 50px;
+    }
+.days p{
+  color: #5d5d5d;
+  font-weight: bold;
+  text-align:  center;
+}
+hr{
+  border: 1px solid #e6e3e3;
+}
+.last{
+  display: flex;
+}
+.total p{
+  font-weight: bold;
+  color: #767676;
+  margin-left: 20px;
+
+}
+.total h1{
+  font-size: xx-large;
+}
+.lastmonth{
+  margin-top: 0px;
+  margin-left: 180px;
+}
+
+.lastmonth p{
+  font-weight: bold;
+  color: #767676;
+  margin-left: 0px;
+}
+
+.empty{
+  top: 100%;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+}
+.bar1:hover,.bar2:hover,.bar3:hover,.bar4:hover,.bar5:hover,.bar6:hover,.bar7:hover{
+  transition: 0.3s;
+  background: rgba(93, 145, 236, 0.75);
+
+}
+.bar1:hover{
   
+}
+  </style>
 </head>
 <body>
 
+<div class="upper-card">
+  <div class="balance">
+  <p>My balance</p>
+  <h2>$921.48</h2>
 
-    <div class="card" >
-      <div class="img"><img src="assets/images/illustration-article.svg" alt=""></div>
-      <div class="learn"><h3>Learning</h3></div>
-      <div class="publish"><h4>Published 21 Dec 2023</h4></div>
-      <div class="htmlandcss"><h2>HTML & CSS foundations</h2></div>
-      <h4 class="paragraph">These languages are the backbone of every website, defining structure, content, and presentation.</h4>
-      <div class="id">
-        <img class="avatar" src="assets/images/image-avatar.webp">
-        <p>Greg Hooper</p>
-      </div>
+  </div>
+  <div class="circles"><img src="/images/logo.svg" alt=""></div>
+</div>
+<!-- ₹₹₹₹₹₹₹ -->
+<div class="lower-card">
+  <h1>Spending - Last 7 days</h1>
+  <div class="days">
+    <div class="mon"><div class="bar1"></div><p>mon</p></div>
+    <div class="tue"><div class="bar2"></div><p>tue</p></div>
+    <div class="wed"><div class="bar3"></div><p>wed</p></div>
+    <div class="thu"><div class="bar4"></div><p>thu</p></div>
+    <div class="fri"><div class="bar5"></div><p>fri</p></div>
+    <div class="sat"><div class="bar6"></div><p>sat</p></div>
+    <div class="sun"><div class="bar7"></div><p>sun</p></div>
+  </div>
+  <hr>
+    <div class="last">
+  <div class="total">
+    <p>Total this month</p>
+    <h1>$478.33</h1>
     </div>
+    <div class="lastmonth">
+      <h4>+2.4%</h4>
+      <p>from last month</p>
+    </div>
+  </div>
 
+</div>
 
-
-
-
-
+<div class="empty"></div>
 </body>
 </html>
